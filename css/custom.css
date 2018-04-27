@@ -1,0 +1,357 @@
+#header .logos{
+    display: block;
+    line-height: 70px;
+    -webkit-transition: none;
+    transition: none;
+}
+#header .logos img{
+    max-width: 150%;
+}
+
+.footer-logo{
+    display: inline-block;
+    padding: 18px 18px;
+    border-radius: 0 0 3px 3px;
+}
+.made-by{
+    font-size: 12px;
+    font-style: normal;
+}
+#start-now-scroll {
+    top:-120px; /* -(some pixels above) */
+    position:relative;
+    z-index:5;
+}
+
+.tabbed-about-us .tab-pane{
+    margin-bottom: 20px;
+    display: none;
+    border: none;
+}
+
+.code-entry {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  height: 130px;
+  width: 100%;
+  padding: 20px 30px;
+  color: white;
+  font-size: 1.2em;
+  margin-right: auto;
+  margin-left: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 991px) {
+  .code-entry {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+
+.code-entry label {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.code-entry .input-group .form-control {
+  height: 50px;
+}
+
+.code-entry .input-group .btn {
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .code-entry .input-group .btn {
+    width: 115px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+  }
+}
+
+.code-entry .get-started {
+  margin-right: 45px;
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .code-entry .get-started {
+    margin-right: 0;
+    padding: 15px 15px 5px;
+    text-align: center;
+    background-color: #ed1c24;
+    border-radius: 5px;
+  }
+}
+
+.code-entry .found-item {
+  margin-left: 30px;
+}
+
+@media (max-width: 991px) {
+  .code-entry .found-item {
+    margin-top: 15px;
+    margin-left: 0;
+    padding: 15px 15px 5px;
+    text-align: center;
+    /*background-color: #161616;
+    border-radius: 5px;*/
+  }
+}
+
+@media (max-width: 767px) {
+  .code-entry {
+    bottom: auto;
+  }
+
+  .code-entry label {
+    font-size: 0.75em;
+  }
+}
+
+.code-red {
+  width: 50%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: #ed1c24;
+}
+
+@media (max-width: 991px) {
+  .code-red {
+    display: none;
+  }
+}
+
+.code-black {
+  width: 50%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.8;
+  background-color: #161616;
+}
+
+@media (max-width: 991px) {
+  .code-black {
+    display: none;
+  }
+}
+
+.advanced-slider.simple-slider .item .item-content{
+    padding: 0;
+    height: 840px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.found {
+	position: absolute; 
+	left: 50%; 
+	bottom: 140px; 
+	transform: translate(-50%, -50%); 
+	margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .found {
+    position: absolute; 
+	left: 50%; 
+	bottom: 440px; 
+	transform: translate(-50%, -50%); 
+	margin: 0 auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider-details {
+    display:none;
+  }
+}
+
+.designdpi { color: #909090;text-decoration:none;display:inline; position:relative }
+.designdpi:hover { text-decoration:underline }
+.designdpi:hover:after {
+	color:#FFF;
+	font-size: 11px;
+	background:#000;
+	background:rgba(0,0,0,.8);
+	content:attr(data-title);
+	padding:10px 12px;
+	white-space:nowrap;
+	display:block;
+	position:absolute;
+	left:30%;
+	bottom:18px;
+	z-index:8
+}
+.designdpi:hover:before {
+    border:solid;
+    border-color:rgba(0,0,0,.8) transparent;
+    border-width:6px 6px 0 6px;
+    content:"";
+    display:block;
+    position:absolute;
+	left:50%;
+	bottom:12px;
+    z-index:9
+}
+
+table { 
+	width: 700px; 
+	border-collapse: collapse; 
+	margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+
+th { 
+	background: #ff9800; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+table { 
+  	width: 100%; 
+}
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr { 
+	display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	font-family: 'Montserrat', sans-serif;
+}
+	
+tr { border: 1px solid #ccc; }
+	
+td { 
+	/* Behave  like a "row" */
+	border: none;
+	border-bottom: 1px solid #eee; 
+	position: relative;
+	padding-left: 50%; 
+}
+
+td:before { 
+	/* Now like a table header */
+	position: absolute;
+	/* Top/left values mimic padding */
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+	/* Label the data */
+	content: attr(data-column);
+	color: #000;
+	font-weight: bold;
+}
+
+}
+.ok {
+	color:#13D51D;
+}
+
+.lost {
+	color:#CC0000;
+}
+
+.report {
+	text-align:center;
+}
+
+/* Login Alternate CSS */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  /*background: #f2f2f2;*/
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #ff9800;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
